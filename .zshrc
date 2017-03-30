@@ -88,6 +88,7 @@ export EDITOR=vim
 export CATALINA_HOME=~/Tomcat
 export CATALINA_BASE=~/Tomcat
 export PAHT=$PAHT:~/maven/bin
+export CDPATH=$CDPATH:~
 
 alias ..="cd .."
 alias ..2="cd ../.."
