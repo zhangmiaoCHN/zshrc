@@ -84,6 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export VISUAL=vim
 export EDITOR=vim
 export CATALINA_HOME=~/Tomcat
 export CATALINA_BASE=~/Tomcat
