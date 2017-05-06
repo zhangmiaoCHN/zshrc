@@ -97,6 +97,7 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias gagcgp="git add .; git commit -m '#'; git push"
 
 # Create the directory and cd to it automatically
