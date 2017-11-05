@@ -89,7 +89,7 @@ export EDITOR=vim
 export CATALINA_HOME=~/Tomcat
 export CATALINA_BASE=~/Tomcat
 export PAHT=$PAHT:~/maven/bin
-export CDPATH=$CDPATH:~
+export CDPATH=$CDPATH:~:~/Projects
 export LESS=-RXF
 
 alias ..="cd .."
@@ -107,18 +107,15 @@ function mkdircd () {
     mkdir -p "$@" && eval cd "\"\$$#\"";
 }
 
-
 PATH="/Users/zhangmiao/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/zhangmiao/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/zhangmiao/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/zhangmiao/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/zhangmiao/perl5"; export PERL_MM_OPT;
 
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -128,3 +125,9 @@ eval "$(pyenv virtualenv-init -)"
 export LANG=en_US.UTF-8
 export LC_ALL=$LANG
 
+# Disallow window renaming in the tmux configuration
+export DISABLE_AUTO_TITLE="true"
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
