@@ -101,6 +101,7 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias gagcgp="git add .; git commit -m '#'; git push"
 alias gp="git pull"
 alias venv="source ~/venv/bin/activate"
+alias venv3="source ~/venv3/bin/activate"
 
 # Create the directory and cd to it automatically
 function mkdircd () {
