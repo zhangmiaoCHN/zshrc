@@ -102,6 +102,7 @@ alias gagcgp="git add .; git commit -m '#'; git push"
 alias gp="git pull"
 alias venv="source ~/venv/bin/activate"
 alias venv3="source ~/venv3/bin/activate"
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # Create the directory and cd to it automatically
 function mkdircd () {
